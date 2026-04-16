@@ -15,24 +15,24 @@ module.exports = {
       },
       direccion: {
         type: Sequelize.STRING(200),
-        allowNull:false
+         allowNull:false
       },
       telefono: {
         type: Sequelize.STRING(15),
-        allowNull:false
+         allowNull:false
       },
       email: {
         type: Sequelize.STRING(120),
-        allowNull:false
+         allowNull:false
       },
       password: {
         type: Sequelize.STRING(255),
-        allowNull:false
+         allowNull:false
       },
       rol: {
         type: Sequelize.ENUM('admin', 'cliente'),
-      allowNull:false,
-      defaultValue: 'cliente'
+        allowNull:false,
+        defaultValue: 'cliente'
       },
       fecha_registro: {
         type: Sequelize.DATE,
